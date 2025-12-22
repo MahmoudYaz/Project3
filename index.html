@@ -173,10 +173,31 @@
     </div>
     <div class="translation-content p-4">
       <h3 class="mb-2"><span class="text-white fw-bold p-2">Write And Translate</span> <span class="text-warning fw-bold">Press Here</span></h3>
-      <button class="btn btn-warning text-white fw-bold mb-4 px-4">Copy</button>
+      <div class="mb-4">
+        <button class="btn btn-warning text-white fw-bold px-4" id="copyBtn">Copy</button>
+        <span id="copiedMessage" class="btn btn-dark ms-2 rounded-5" style="display: none;">Copied!</span>
+      </div>
       <textarea class="form-control border-0" id="translateArea" rows="6" placeholder="translate:"></textarea>
     </div>
   </section>
+
+  <!-- Copy Success Modal -->
+  <div class="modal fade" id="copyModal" tabindex="-1" aria-labelledby="copyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title fw-bold text-warning" id="copyModalLabel">Restaurant</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body px-4 pb-4">
+          <p class="mb-4">the message copied</p>
+          <div class="text-end">
+            <button type="button" class="btn btn-dark px-4" data-bs-dismiss="modal">Ok</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Login Modal -->
   <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">

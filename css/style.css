@@ -68,6 +68,7 @@
     transition: all 0.3s;
     font-size: 1.8rem;
     border-radius: 6px;
+    opacity: 0.8;
     
 }
 .social-icon i{
@@ -77,6 +78,61 @@
 }
 .social-icon:hover {
     font-style: normal;
-    
+
     opacity: 0.5;
+}
+
+/* Welcome Section */
+.welcome-section {
+    background-color: #cbc9c9;
+    background: linear-gradient(to bottom, #f4f3f3, #bebdbd);
+}
+
+.welcome-section h2 {
+    color: #ff9800;
+    
+}
+
+/* Famous Dishes Section */
+.famous-dishes-section {
+    background-color: #6c757d;
+}
+
+.famous-dishes-section h2 {
+    color: white;
+    background-color: #bebdbd;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    border: none;
+}
+
+.accordion-button {
+    background-color: #e9ecef;
+    color: #333;
+    font-weight: 500;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #dee2e6;
+    color: #000;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
+
+.accordion-body {
+    background-color: #f8f9fa;
+}
+
+/* Translation Section */
+.translation-section {
+    background-color: #6c757d;
+}
+
+.translation-section h2 {
+    color: white;
 }

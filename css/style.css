@@ -85,7 +85,7 @@
 /* Welcome Section */
 .welcome-section {
     background-color: #cbc9c9;
-    background: linear-gradient(to bottom, #f4f3f3, #bebdbd);
+    background: linear-gradient(to bottom, #f4f3f3, #8d8d8d);
 }
 
 .welcome-section h2 {
@@ -130,9 +130,45 @@
 
 /* Translation Section */
 .translation-section {
-    background-color: #6c757d;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-.translation-section h2 {
-    color: white;
+.translation-header {
+   background-color: #bebdbd;
+    width: 100%;
+}
+
+.translation-header h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.translation-content {
+     background-color: #cbc9c9;
+    background: linear-gradient(to bottom, #d5d5d5, #8d8d8d);
+    width: 100%;
+}
+
+.translation-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.translation-content h3 .text-light {
+    color: #e0e0e0 !important;
+}
+
+.translation-content textarea {
+    background-color: white;
+    border: none;
+    font-size: 1rem;
+    padding: 20px;
+    width: 100%;
+}
+
+.translation-content textarea::placeholder {
+    color: #888;
+    font-size: 1.1rem;
 }

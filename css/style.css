@@ -172,3 +172,46 @@
     color: #888;
     font-size: 1.1rem;
 }
+
+/* Popular Dishes Cards Hover Effect */
+.popular-dishes-section .card {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.popular-dishes-section .card::before,
+.popular-dishes-section .card::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ffc107;
+    opacity: 0;
+    transition: all 0.5s ease;
+    z-index: 1;
+}
+
+/* يبدأ من الزاوية السفلى اليسرى */
+.popular-dishes-section .card::before {
+    bottom: -100%;
+    left: -100%;
+}
+
+/* يبدأ من الزاوية العليا اليمنى */
+.popular-dishes-section .card::after {
+    top: -100%;
+    right: -100%;
+}
+
+.popular-dishes-section .card:hover::before {
+    bottom: 0;
+    left: 0;
+    opacity: 0.1 ;
+}
+
+.popular-dishes-section .card:hover::after {
+    top: 0;
+    right: 0;
+    opacity: 0.1;
+}

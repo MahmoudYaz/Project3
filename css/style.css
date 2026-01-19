@@ -178,6 +178,7 @@
     position: relative;
     overflow: hidden;
     transition: all 0.3s ease;
+    box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.35);
 }
 
 .popular-dishes-section .card::before,

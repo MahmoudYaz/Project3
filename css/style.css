@@ -216,3 +216,17 @@
     right: 0;
     opacity: 0.1;
 }
+
+/* Team Section Cards */
+.team-card {
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+}
+
+.team-card .team-photo img {
+    border-radius: 15px;
+}
+
+.team-card:hover {
+    transform: scale(0.95);
+}

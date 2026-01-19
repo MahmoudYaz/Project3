@@ -230,3 +230,31 @@
 .team-card:hover {
     transform: scale(0.95);
 }
+
+/* News Section Styles */
+.news-section h2 {
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.news-section h2:hover {
+    color: #6c757d;
+}
+
+.news-section .btn-warning {
+    transition: all 0.3s ease;
+}
+
+.news-section .btn-warning:hover {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+/* News Section Image Zoom Effect */
+.news-section .row img {
+    transition: transform 0.5s ease;
+}
+
+.news-section .row:hover img {
+    transform: scale(1.1);
+}
